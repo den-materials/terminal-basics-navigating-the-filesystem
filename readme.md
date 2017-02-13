@@ -37,7 +37,7 @@ Hopefully by the end of this class, I can get you to love, or at least like, the
 
 - **Open** the terminal
 - **Issue** one or more commands on the command line
-- **Be comfortable** navigating between folders on the command line
+- **Navigate** between folders on the command line
 
 ---
 
@@ -67,14 +67,13 @@ There is so much that your computer will do for you if you know how to speak its
 <details>
   <summary>What is a shell?</summary>
   <p>A shell is a type of command-line program, which contains a very simple, text-based user interface enabling us to access all of an operating system's services. It is a program that accepts *text as input* and *translates that text* into the *appropriate functions* that you want your computer to run.</p>
-  <p>*Taken from Just for fun: [Type like a hacker](http://hackertyper.com/)*</p>
 </details>
 
 ---
 
 <!-- 1:40 5 minutes -->
 
-<!-- Half-mast I do -->
+<!-- Code-along -->
 
 ## Forget Finder, get fast at using your laptop
 
@@ -102,21 +101,22 @@ Notice that you can actually hit enter as soon as the field autocompletes. Get u
 
 - To quit the command line altogether, you can press **⌘-Q**.
 
-<!-- Open up and do all, half-mast when done, help neighbors if stuck -->
+<!-- help neighbors if stuck -->
 
 ---
 
-<!-- 1:45 10 minutes -->
+<!-- 1:45 15 minutes -->
 
 ## Paths
 
 <!-- Before this, run through all of the commands that do these things with dev input-->
 
 Here's a quick review lab:
-From your home directory, make a 
-* a file named my ``my_birthday_<you birthday in yy_mm_dd format>.txt``, example ``my_birthday_79_05_11.txt``.
-* a directory named ``temporary_work``
-* a file named ``i_love_javascript.js`` in the ``temporary_work`` directory
+
+From your home directory, do the following:
+* make a file named my ``my_birthday_<you birthday in yy_mm_dd format>.txt``, example ``my_birthday_79_05_11.txt``.
+* make a directory named ``temporary_work``
+* make a file named ``i_love_javascript.js`` in the ``temporary_work`` directory
 * make a directory named ``wdi`` and another directory in ``wdi`` named ``lessons``
 * print out the contents of the ``temporary_work`` folder 
 
@@ -129,13 +129,9 @@ Every file or folder in a file system can be read, written, and deleted by refer
 - **absolute paths**
 - **relative paths**
 
-*Directory* is an important term that's used interchangeably with *folder*. Though they are not exactly the same thing, when we say "navigate to your project directory" think of this as "navigate to your project folder".  Here's a little more information:
+*Directory* is an important term that's used interchangeably with *folder*. Though they are not exactly the same thing, when we say "navigate to your project directory" think of this as "navigate to your project folder".
 
-_Strictly speaking, there is a difference between a directory which is a file system concept, and the graphical user interface metaphor that is used to represent it (a folder)...If one is referring to a container of documents, the term folder is more appropriate. The term directory refers to the way a structured list of document files and folders is stored on the computer. It is comparable to a telephone directory that contains lists of names, numbers and addresses and does not contain the actual documents themselves._
-
-*Taken from [Close-To-Open Cache Consistency in the Linux NFS Client](http://www.citi.umich.edu/projects/nfs-perf/results/cel/dnlc.html)*
-
-*Absolute Paths*
+*What is an absolute path?*
 
 An absolute path is defined as the specific location of a file or folder from the root directory, typically shown as `/`. The root directory is the starting point from which all other folders are defined and is not normally the same as your **Home** directory, which is normally found at `/Users/[Your Username]`.
 
@@ -145,9 +141,7 @@ An absolute path is defined as the specific location of a file or folder from th
 /var/data/database.db
 
 ```
-Notice, all these paths started from `/` directory which is a root directory for every Linux/Unix machines.
-
-Some examples of absolute path:
+Notice, all these paths started from `/` directory which is a root directory for every Unix machine.
 
 *What is a relative path?*
 A relative path is a reference to a file or folder **relative** to the current position, or the present working directory(pwd). If we are in the folder `/a/b/` and we want to open the file that has the absolute path `/a/b/c/file.txt`, we can just type:
@@ -162,7 +156,7 @@ or
 open ./c/file.txt
 ```
 
-At any time, we can also use the absolute path, by adding a slash to the beginning of the path. The absolute path is the same for a file or a folder regardless of the current working directory, but relative paths are different, depending on what directory we are in.  Directory structures are laid out like `directory/subdirectory/subsubdirectory`.
+The absolute path is the same for a file or a folder regardless of the current working directory, but relative paths are different, depending on what directory we are in.  Directory structures are laid out like `directory/subdirectory/subsubdirectory`.
 
 <!-- Ask for dev input (what is relative vs absolute) but with real examples on my PC -->
 
@@ -178,12 +172,6 @@ Below are some examples of using relative and absolute path for the same action:
   - Using relative path: `cd ../labs`
   - Using absolute path: `cd /wdi/labs`
 
-By the way, your terminal is located in:
-
-```bash
-/Applications/Utilities/Terminal.app
-```
-
 ### Navigating through the command prompt
 
 The tilde `~` character is an alias to your home directory. Use it to quickly return home.
@@ -194,15 +182,16 @@ cd ~/
 
 We're "looking into" the User directory at this point; use **Tab** and the **arrow keys** in the command line to increase your speed while navigating the command line.
 
-Pressing **Up** scrolls through previously entered commands.
+Pressing **Up** scrolls through previously entered commands.  Pressing **Tab** will complete a command if your Terminal can infer the rest of it.
 
-[CFU]: # (Stop and jot. What is the absolute path to temporary_work? /Users/<username>/Coding/WDI_2/temporary_work... What is the relative path to the lessons folder from WDI_2? lessons)
+[CFU]: # (Stop and jot. What is the absolute path to temporary_work? /Users/<username>/Coding/3rd_WDI/temporary_work... What is the relative path to the lessons folder from 3rd_WDI? lessons)
 
-<!-- 1:55 - 10 mins -->
+<!-- 2:00 - 10 mins -->
+<!--Code-along -->
 
 ## Copying and Moving Files
 
-Copying files and folders? No problem - `cp file new-file1` creates a copy of the “file” and calls it “new-file” in your current directory.  If you're looking to copy directories you'll have to pass in a `-r`, which stands for "recursive" - to copy the directory and everything inside of it:
+Copying files and folders? No problem - `cp file new-file` creates a copy of the “file” and calls it “new-file” in your current directory.  If you're looking to copy directories you'll have to pass in a `-r`, which stands for "recursive" - to copy the directory and everything inside of it:
 
 ```bash
 cp -r my-project my-project-copy
@@ -234,7 +223,7 @@ The first command removes the file `junk-file.txt`; the second removes the direc
 
 ### Modifying multiple files at the same time
 
-Now, if you're making a whole bunch of files/folders, `mkdir` `rm` and `touch` can be used to create and remove more than one file/directory at the same time.
+Now, if you're making a whole bunch of files/folders, `mkdir` `rm` and `touch` can be used to create or remove more than one file/directory at the same time.
 
 Try it out.  First, `ls` to see what you have in there and then:
 
@@ -242,7 +231,7 @@ Try it out.  First, `ls` to see what you have in there and then:
 - `touch file01 file02 file03`
 - `rm file01 file03`
 
-Thinking about this command with relative and absolute paths:
+Think about this command with relative and absolute paths:
 
 - If my present location is `/a/b/`, and I am want to remove `/a/b/folder/file.txt` file
 
@@ -254,13 +243,15 @@ Thinking about this command with relative and absolute paths:
   - Using relative path: `rm a.txt`
   - Using absolute path: `rm /wdi/labs/a.txt`
 
+### Moving/Renaming Files
+
 Finally, we can rename and move files and folders with this syntax:
 
 ```bash
 mv file-name file-name2
 ```
 
-The first argument is the file or folder being moved or renamed, and the second argument is the directory destination you can use to also rename the file/folder if you want.  For example, from your root directory:
+The first argument is the file or folder being moved or renamed, and the second argument is the destination.  For example, from your root directory:
 
 ```bash
 mkdir this-folder that-folder
@@ -278,9 +269,8 @@ A few other helpful commands you can try on your own:
 | `ls -a`   | Lists all items in current directory including hidden files           |
 | `ls -l`   | Gives a long list of items in current directory including permissions |
 | `history` | lists entire commands history                                         |
-| `df -h`   | displays free disk space                                              |
 
-<!-- 2:05 - 10 minutes -->
+<!-- 2:10 - 15 minutes -->
 
 ## UNIX permissions and Chmod
 
@@ -375,16 +365,14 @@ chmod a-x file.txt
 
 This means that the execute bit should be cleared (-) for all users - owner, group and the rest of the world. The permissions start with a letter specifying what users should be affected by the change, and this might be any of the following:
 
-
 * u the owner user
 * g the owner group
 * o others (neither u, nor g)
 * a all users
 
-You might have encountered things like `chmod 755 a_file.txt`.
+You might also encounter things like `chmod 755 a_file.txt`.
 
 You can change the entire permission pattern of a file in one go using one number like the one in this example. Every mode has a corresponding code number, and as we shall see, there is a very simple way to figure out what number corresponds to any mode.
-
 
 Every single digit in the triplet corresponds to the level of authorization for a group (user, group and others). Every digit is the addition of the rights for this group, and every level of permission corresponds to a number:
 
@@ -403,7 +391,7 @@ So, 755 in UNIX permissions means 'I don't mind if other people read or run this
 
 [Comment]: # (An example of why we need chmod is that if we write a small script we'll need to make it executable to actually run it.)
 
-<!-- 2:15 15 minutes -->
+<!-- 2:25 15 minutes -->
 
 ## Customize The terminal - Demo
 
@@ -488,16 +476,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin:$PATH"
 export PATH="/a/b/c:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin:$PATH"
 ```
 
-Now every new terminal session will include the commands (executable files) in the folder `/a/b/c`
+Now every new terminal session will include the commands (executable files) in the folder `/a/b/c`.
 
-
-The orders of the folders in the path matters. For example, in the path above, if there is one executable file called `wdi` in the folder `/a/b/c` and another one with the same name in the folder `/usr/local/bin`, then the one executed when the command `wdi` is invoked and will be the command in the folder `/a/b/c` because of the precedence in the path.
-
-Get comfortable with your `~/.bash_profile`
-
-[Comment]: # (export works for anything. We can use it to keep track of other variables we might need like whether something is a dev or production environment.) 
-
-<!-- 2:30 10 minutes -->
+<!-- 2:40 10 minutes -->
 
 <!-- This might be a good time to do a Command-Line Lab if there is time.  Something like 
 
@@ -517,6 +498,7 @@ We will use the command line several hours every day, because it makes all file 
 ## Resources
 - Click [here](https://github.com/den-wdi-2/terminal-basics-navigating-the-filesystem/blob/master/meta_skills.md) to go to the meta-skills page. 
 - Take a look at some simple keyboard shortcuts to practice: [CLI Shortcuts](https://gist.github.com/alexpchin/01caa027b825d5f98871)
+- [Close-To-Open Cache Consistency in the Linux NFS Client](http://www.citi.umich.edu/projects/nfs-perf/results/cel/dnlc.html)
 
 
 ## Licensing
