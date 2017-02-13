@@ -450,7 +450,7 @@ The path above is actually a list of 5 different paths:
 
 ### Customizing the path
 
-You can add folders in the $PATH by adding in the `.bash_profile` config file. If you open you terminal config file, you’ll see a line looking like:
+You can add folders in the $PATH by adding in the `.bash_profile` config file. If you open `.bash_profile` in Sublime, you may see a line looking like:
 
 ```bash
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin:$PATH"
@@ -462,7 +462,7 @@ Let’s describe this line:
 
 * `export PATH=""` : This tells the terminal to send the variable named PATH to the terminal sessions so that the variable is always accessible.
 * `/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin` This is the list of folders that are defined in the path.
-* `:$PATH` : the PATH variable can be defined in several files and by different programs, so at the end of re-defining the path, adding `:$PATH` means that all the PATH definitions made in other config files will be added to the new definition.
+* `:$PATH` : the PATH variable can be defined in several files and by different programs, so at the end of the path, adding `:$PATH` means that all the PATH definitions made in other config files will be added to the new definition.
 
 In this path definition, we could add a new path to a folder, for example, if we transform this path:
 
