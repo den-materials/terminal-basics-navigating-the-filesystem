@@ -4,6 +4,7 @@ Market: DEN
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
+<!--Actually 1:33 -->
 <!--1:30 5 minutes -->
 
 <!-- Hook: *Go to hackerkeyboard and start typing in.*  Raise your hand if you have this idea of a computer hacker--typing in super-fast, hunched over their green and black monitor, as images flash super-fast in front of them?
@@ -41,6 +42,7 @@ Hopefully by the end of this class, I can get you to love, or at least like, the
 
 ---
 
+<!--1:37 -->
 <!-- 1:35 5 minutes -->
 
 ##  Intro
@@ -71,6 +73,7 @@ There is so much that your computer will do for you if you know how to speak its
 
 ---
 
+<!--1:40 -->
 <!-- 1:40 5 minutes -->
 
 <!-- Code-along -->
@@ -105,6 +108,7 @@ Notice that you can actually hit enter as soon as the field autocompletes. Get u
 
 ---
 
+<!-- 1:46 -->
 <!-- 1:45 15 minutes -->
 
 ## Paths
@@ -121,6 +125,8 @@ From your home directory, do the following:
 * print out the contents of the ``temporary_work`` folder 
 
 You'll have 3 minutes for this excercise.
+
+<!--Actually 2:00 -->
 
 ### Paths 
 
@@ -186,6 +192,7 @@ Pressing **Up** scrolls through previously entered commands.  Pressing **Tab** w
 
 [CFU]: # (Stop and jot. What is the absolute path to temporary_work? /Users/<username>/Coding/3rd_WDI/temporary_work... What is the relative path to the lessons folder from 3rd_WDI? lessons)
 
+<!--2:13 -->
 <!-- 2:00 - 10 mins -->
 <!--Code-along -->
 
@@ -270,6 +277,7 @@ A few other helpful commands you can try on your own:
 | `ls -l`   | Gives a long list of items in current directory including permissions |
 | `history` | lists entire commands history                                         |
 
+<!--2:30 -->
 <!-- 2:10 - 15 minutes -->
 
 ## UNIX permissions and Chmod
@@ -391,6 +399,8 @@ So, 755 in UNIX permissions means 'I don't mind if other people read or run this
 
 [Comment]: # (An example of why we need chmod is that if we write a small script we'll need to make it executable to actually run it.)
 
+<!-- Actually 2:39, even without 
+
 <!-- 2:25 15 minutes -->
 
 ## Customize The terminal - Demo
@@ -478,6 +488,7 @@ export PATH="/a/b/c:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin:$PATH"
 
 Now every new terminal session will include the commands (executable files) in the folder `/a/b/c`.
 
+<!--Actually 3:05 -->
 <!-- 2:40 10 minutes -->
 
 <!-- This might be a good time to do a Command-Line Lab if there is time.  Something like 
