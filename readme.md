@@ -43,6 +43,7 @@ Hopefully by the end of this class, I can get you to love, or at least like, the
 ---
 
 <!--1:37 -->
+<!--1:38 WDI4 -->
 <!-- 1:35 5 minutes -->
 
 ##  Intro
@@ -73,7 +74,7 @@ There is so much that your computer will do for you if you know how to speak its
 
 ---
 
-<!--1:40 -->
+<!--1:40 WDI4-->
 <!-- 1:40 5 minutes -->
 
 <!-- Code-along -->
@@ -108,6 +109,7 @@ Notice that you can actually hit enter as soon as the field autocompletes. Get u
 
 ---
 
+<!--1:44 WDI4 but then UXDI instructors did intro till 1:46 -->
 <!-- 1:46 -->
 <!-- 1:45 15 minutes -->
 
@@ -118,13 +120,13 @@ Notice that you can actually hit enter as soon as the field autocompletes. Get u
 Here's a quick review lab:
 
 From your home directory, do the following:
-* make a file named my ``my_birthday_<you birthday in yy_mm_dd format>.txt``, example ``my_birthday_79_05_11.txt``.
+* make a file named my ``my_birthday_<your birthday in yy_mm_dd format>.txt``, example ``my_birthday_79_05_11.txt``.
 * make a directory named ``temporary_work``
 * make a file named ``i_love_javascript.js`` in the ``temporary_work`` directory
 * make a directory named ``wdi`` and another directory in ``wdi`` named ``lessons``
 * print out the contents of the ``temporary_work`` folder 
 
-You'll have 3 minutes for this excercise.
+You'll have a few minutes for this excercise.
 
 <!--Actually 2:00 -->
 
