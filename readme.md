@@ -129,6 +129,7 @@ From your home directory, do the following:
 You'll have a few minutes for this excercise.
 
 <!--Actually 2:00 -->
+<!--WDI4 1:55-->
 
 ### Paths 
 
@@ -195,6 +196,7 @@ Pressing **Up** scrolls through previously entered commands.  Pressing **Tab** w
 [CFU]: # (Stop and jot. What is the absolute path to temporary_work? /Users/<username>/Coding/3rd_WDI/temporary_work... What is the relative path to the lessons folder from 3rd_WDI? lessons)
 
 <!--2:13 -->
+<!--2:05 WDI4 -->
 <!-- 2:00 - 10 mins -->
 <!--Code-along -->
 
@@ -280,6 +282,7 @@ A few other helpful commands you can try on your own:
 | `history` | lists entire commands history                                         |
 
 <!--2:30 -->
+<!--2:19 WDI4 -->
 <!-- 2:10 - 15 minutes -->
 
 ## UNIX permissions and Chmod
@@ -403,6 +406,7 @@ So, 755 in UNIX permissions means 'I don't mind if other people read or run this
 
 <!-- Actually 2:39, even without 
 
+<!--2:29 WDI4 -->
 <!-- 2:25 15 minutes -->
 
 ## Customize The terminal - Demo
@@ -507,6 +511,8 @@ Now every new terminal session will include the commands (executable files) in t
 ## Closing Thoughts
 
 We will use the command line several hours every day, because it makes all file and folder manipulations easier. A lot of programs that we will use during the course also only have CLI interaction and can only be used with commands. Always remember that every action you'll do in a GUI can be done in the CLI, but the reverse is not always true.
+
+<!--2:43 WDI4 -->
 
 ## Resources
 - Click [here](https://github.com/den-wdi-2/terminal-basics-navigating-the-filesystem/blob/master/meta_skills.md) to go to the meta-skills page. 
