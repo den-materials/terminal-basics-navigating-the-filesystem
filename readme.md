@@ -123,7 +123,7 @@ From your home directory, do the following:
 * make a file named my ``my_birthday_<your birthday in yy_mm_dd format>.txt``, example ``my_birthday_79_05_11.txt``.
 * make a directory named ``temporary_work``
 * make a file named ``i_love_javascript.js`` in the ``temporary_work`` directory
-* make a directory named ``wdi`` and another directory in ``wdi`` named ``lessons``
+* make a directory named ``wdi`` inside ``temporary_work`` and another directory in ``wdi`` named ``lessons``
 * print out the contents of the ``temporary_work`` folder 
 
 You'll have a few minutes for this excercise.
