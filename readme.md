@@ -5,6 +5,7 @@ Market: DEN
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
 <!--Actually 1:33 -->
+<!--WDI5 1:38 -->
 <!--1:30 5 minutes -->
 
 <!-- Hook: *Go to hackerkeyboard and start typing in.*  Raise your hand if you have this idea of a computer hacker--typing in super-fast, hunched over their green and black monitor, as images flash super-fast in front of them?
@@ -44,6 +45,7 @@ Hopefully by the end of this class, I can get you to love, or at least like, the
 
 <!--1:37 -->
 <!--1:38 WDI4 -->
+<!--WDI5 1:43 -->
 <!-- 1:35 5 minutes -->
 
 ##  Intro
@@ -109,6 +111,7 @@ Notice that you can actually hit enter as soon as the field autocompletes. Get u
 
 ---
 
+<!--WDI5 1:51 -->
 <!--1:44 WDI4 but then UXDI instructors did intro till 1:46 -->
 <!-- 1:46 -->
 <!-- 1:45 15 minutes -->
@@ -130,6 +133,7 @@ You'll have a few minutes for this excercise.
 
 <!--Actually 2:00 -->
 <!--WDI4 1:55-->
+<!--WDI5 1:58 -->
 
 ### Paths 
 
@@ -195,6 +199,7 @@ Pressing **Up** scrolls through previously entered commands.  Pressing **Tab** w
 
 [CFU]: # (Stop and jot. What is the absolute path to temporary_work? /Users/<username>/Coding/3rd_WDI/temporary_work... What is the relative path to the lessons folder from 3rd_WDI? lessons)
 
+<!--WDI5 2:11 -->
 <!--2:13 -->
 <!--2:05 WDI4 -->
 <!-- 2:00 - 10 mins -->
@@ -254,6 +259,8 @@ Think about this command with relative and absolute paths:
   - Using relative path: `rm a.txt`
   - Using absolute path: `rm /wdi/labs/a.txt`
 
+<!--WDI5 2:21 -->
+
 ### Moving/Renaming Files
 
 Finally, we can rename and move files and folders with this syntax:
@@ -283,6 +290,7 @@ A few other helpful commands you can try on your own:
 
 <!--2:30 -->
 <!--2:19 WDI4 -->
+<!--2:25 WDI5 -->
 <!-- 2:10 - 15 minutes -->
 
 ## UNIX permissions and Chmod
@@ -407,6 +415,7 @@ So, 755 in UNIX permissions means 'I don't mind if other people read or run this
 <!-- Actually 2:39, even without 
 
 <!--2:29 WDI4 -->
+<!--WDI5  2:38 -->
 <!-- 2:25 15 minutes -->
 
 ## Customize The terminal - Demo
@@ -513,6 +522,7 @@ Now every new terminal session will include the commands (executable files) in t
 We will use the command line several hours every day, because it makes all file and folder manipulations easier. A lot of programs that we will use during the course also only have CLI interaction and can only be used with commands. Always remember that every action you'll do in a GUI can be done in the CLI, but the reverse is not always true.
 
 <!--2:43 WDI4 -->
+<!--2:54 WDI5 -->
 
 ## Resources
 - Click [here](https://github.com/den-wdi-2/terminal-basics-navigating-the-filesystem/blob/master/meta_skills.md) to go to the meta-skills page. 
