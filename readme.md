@@ -418,19 +418,7 @@ So, 755 in UNIX permissions means 'I don't mind if other people read or run this
 <!--WDI5  2:38 -->
 <!-- 2:25 15 minutes -->
 
-## Customize The terminal - Demo
-
-#### When using bash_profile
-
-When a terminal session starts, there are some configurations read at the start of the session. The configuration is written in a file that has a specific name. As we run `bash`, the file name for this type of shell is called `.bash_profile` and is located in the user folder, so every user for the same machine can have different configurations.
-
-If you open the file `.bash_profile` using the command `subl ~/.bash_profile`, you'll see your own config file for bash.
-
-You can add code to this file and it will be parsed and/or executed every time you open a new window/tab.  You can add custom commands, aliases, redefine your path etc.
-
-One of the most important params in this file is the `$PATH` definition, let's see what this is about.
-
-### $PATH
+## $PATH
 
 You’ll hear about _shell path_ (or $PATH) when working with the command line. The _shell path_ in OS X (or Linux) refers to a list of folders in the file system that contains files or executables that will be used by certain applications and programs.
 
@@ -471,37 +459,6 @@ The path above is actually a list of 5 different paths:
 * /usr/sbin
 * /sbin
 * /usr/local/bin
-
-
-### Customizing the path
-
-You can add folders in the $PATH by adding in the `.bash_profile` config file. If you open `.bash_profile` in Sublime, you may see a line looking like:
-
-```bash
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin:$PATH"
-```
-
-(the folders may be different in your PATH)
-
-Let’s describe this line:
-
-* `export PATH=""` : This tells the terminal to send the variable named PATH to the terminal sessions so that the variable is always accessible.
-* `/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin` This is the list of folders that are defined in the path.
-* `:$PATH` : the PATH variable can be defined in several files and by different programs, so at the end of the path, adding `:$PATH` means that all the PATH definitions made in other config files will be added to the new definition.
-
-In this path definition, we could add a new path to a folder, for example, if we transform this path:
-
-```bash
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin:$PATH"
-```
-
-...to this path:
-
-```bash
-export PATH="/a/b/c:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin:$PATH"
-```
-
-Now every new terminal session will include the commands (executable files) in the folder `/a/b/c`.
 
 <!--Actually 3:05 -->
 <!-- 2:40 10 minutes -->
