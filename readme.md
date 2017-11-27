@@ -4,6 +4,7 @@ Market: DEN
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
+<!--WDI6 1:56 -->
 <!--Actually 1:33 -->
 <!--WDI5 1:38 -->
 <!--1:30 5 minutes -->
@@ -32,6 +33,8 @@ Hopefully by the end of this class, I can get you to love, or at least like, the
 - **Use** the most common commands to navigate and modify files / directories via the Terminal window (`cd`, `pwd`, `mkdir`, `rm -r`, `mv`, `cp`, `touch`)
 - **Describe** a basic UNIX permissions system
 - **Differentiate** between navigating the file system using the CLI vs. the GUI
+
+<!--WDI6 2:00 -->
 
 ## Where should we be now?
 <!-- call out the skills that are prerequisites -->
@@ -131,6 +134,7 @@ From your home directory, do the following:
 
 You'll have a few minutes for this excercise.
 
+<!--WDI6 2:17  -->
 <!--Actually 2:00 -->
 <!--WDI4 1:55-->
 <!--WDI5 1:58 -->
@@ -199,6 +203,7 @@ Pressing **Up** scrolls through previously entered commands.  Pressing **Tab** w
 
 [CFU]: # (Stop and jot. What is the absolute path to temporary_work? /Users/<username>/Coding/3rd_WDI/temporary_work... What is the relative path to the lessons folder from 3rd_WDI? lessons)
 
+<!--WDI6 2:32 -->
 <!--WDI5 2:11 -->
 <!--2:13 -->
 <!--2:05 WDI4 -->
@@ -260,6 +265,7 @@ Think about this command with relative and absolute paths:
   - Using absolute path: `rm /wdi/labs/a.txt`
 
 <!--WDI5 2:21 -->
+<!--WDI6 2:41 -->
 
 ### Moving/Renaming Files
 
@@ -291,6 +297,7 @@ A few other helpful commands you can try on your own:
 <!--2:30 -->
 <!--2:19 WDI4 -->
 <!--2:25 WDI5 -->
+<!--WDI6 2:46 -->
 <!-- 2:10 - 15 minutes -->
 
 ## UNIX permissions and Chmod
@@ -414,6 +421,7 @@ So, 755 in UNIX permissions means 'I don't mind if other people read or run this
 
 <!-- Actually 2:39, even without 
 
+<!--WDI6 3:01  -->
 <!--2:29 WDI4 -->
 <!--WDI5  2:38 -->
 <!-- 2:25 15 minutes -->
@@ -480,9 +488,10 @@ We will use the command line several hours every day, because it makes all file 
 
 <!--2:43 WDI4 -->
 <!--2:54 WDI5 -->
+<!--WDI6 3:12 -->
 
 ## Resources
-- Click [here](https://github.com/den-wdi-2/terminal-basics-navigating-the-filesystem/blob/master/meta_skills.md) to go to the meta-skills page. 
+- Click [here](https://github.com/den-materials/terminal-basics-navigating-the-filesystem/blob/master/meta_skills.md) to go to the meta-skills page. 
 - Take a look at some simple keyboard shortcuts to practice: [CLI Shortcuts](https://gist.github.com/alexpchin/01caa027b825d5f98871)
 - [Close-To-Open Cache Consistency in the Linux NFS Client](http://www.citi.umich.edu/projects/nfs-perf/results/cel/dnlc.html)
 
